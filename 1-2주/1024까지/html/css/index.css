@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+}
+/* 퀵메뉴 만들기 */
+.quick {
+    width: 100px;
+    /* height: 160px; */
+    border: 0px solid black;
+    position: absolute;
+    top: 200px; right: 0;
+}
+.quick p {
+    width: 100%; height: 40px;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    line-height: 40px;
+    text-indent: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+.quick p:hover {
+    background: orange;
+    color: white;
+    margin-left: 0px;
+}
+
+
+
+
+.popup {
+    position: absolute;
+    top: 320px; left: 300px;
+    
+    width: 300px; 
+    /* height: 350px; */
+    border: 1px solid #ccc;
+    background: white;    
+}
+.popup .titleBox {
+    border: 0px solid red;
+    display: flex;
+    background: black;
+    color: white;
+}
+.popup .titleBox p {
+    height: 50px;
+    border: 0px solid blue;
+    line-height: 50px;
+}
+.popup .titleBox .popupTitle {
+    width: 80%;
+    text-indent: 10px;
+}
+.popup .titleBox .popupClose {
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+.popup .popupBody {
+    /* height: 200px; */
+    /* border: 0px solid green; */
+    border: 0px solid #ccc;
+}
+.popup .popupBody p {
+    border: 0px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 20px;
+}
+.popup .popupBody p:first-child {
+    color: red;
+    font-family: 궁서체;
+}
+.popup .popupFooter {
+    height: 100px;
+    border: 1px solid #ccc;
+    background: darkblue;
+    margin-top: 30px;
+    color: white;
+}
+.popup .popupFooter p {
+    border: 0px solid red;
+    height: 30px;    
+    text-align: center;
+}
+.popup .popupFooter p:first-child {
+    margin-top: 20px;
+    line-height: 40px;
+}
+.popup .popupFooter p:last-child {
+    line-height: 20px;
+}
+
+
+/* 메뉴 만들기 */
+.menu {
+    width: 500px; height: 50px;
+    border: 0px solid #ccc;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu div {
+    width: 20%;
+    border: 0px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+/* 메뉴에서 실제로 보이는 문자를 갖고 있는 태그 p */
+.menu div p {
+    width: 100%; height: 100%;
+    border: 0px solid red;
+}
+.menu div:hover div {
+    display: block;
+}
+.menu div:nth-child(2):hover div {
+    margin-left: -100%;
+}
+.menu div:nth-child(3):hover div {
+    margin-left: -200%;
+}
+.menu div:nth-child(4):hover div {
+    margin-left: -300%;
+}
+.menu div:nth-child(5):hover div {
+    margin-left: -400%;
+}
+/* 메뉴 오버하면 메뉴 설명 나오는 태그 */
+.menu div div {
+    width: 500%;
+    border: 1px solid rgba(0, 128, 0, 0.205);
+    border-radius: 15px;
+    display: none;
+}
+
+.search {
+    width: 500px; height: 50px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.search div {
+    height: 50px;
+    border: 0px solid blue;
+}
+.search div:first-child {
+    width: 80%;
+}
+.search div:last-child {
+    width: 20%;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.search div input {
+    display: block;
+    width: 100%;
+    height: 95%;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+.title {
+    width: 500px; height: 70px;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    margin: 50px auto;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.title:hover {
+    background: rgb(49, 191, 137);
+    color: #fff;
+}
+/* 아이콘 4개가 있는 박스 */
+.placeBox {
+    width: 500px; height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.placeBox div {
+    width: 120px; 
+    /* height: 20px; */
+    border: 0px solid green;
+    text-align: center;
+    cursor: pointer;
+}
+.placeBox div:nth-child(1):hover {
+    color: blue;
+}
+.placeBox div:nth-child(2):hover {
+    color: green;
+}
+.placeBox div:nth-child(3):hover {
+    color: red;
+}
+.placeBox div:nth-child(4):hover {
+    color: orange;
+}
+
+
+.placeBox .icon {
+    height: 80px;
+    font-size: 3rem;
+}
+.big {
+    width: 500px;
+    height: 300px;
+    border: 1px solid pink;
+    border-radius: 20px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.big img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.big img:hover {
+    transform: scale(1.2);
+}
+/* 작은 그림 4개 */
+.small_imgs {
+    width: 500px;
+    height: 80px;
+    border: 0px solid red;
+    border-radius: 10px;
+    margin: -40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.small_imgs div {
+    width: 100px;
+    border: 0px solid #ccc;
+    cursor: pointer;
+}
+.small_imgs div img {
+    width: 100%; height: 100%;
+    border-radius: 5px;
+}
